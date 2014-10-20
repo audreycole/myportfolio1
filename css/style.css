@@ -1,0 +1,228 @@
+body {
+	/*background: #2477ad;*/
+	background-image: url('http://brandthunder.com/wp/wp-content/uploads/2011/11/Mac_Desktop_Background.jpg'); 
+	background-color: #cccccc
+  text-align: center;
+}
+
+.home {
+	margin-top: 5%;
+}
+
+.welcome-img {
+  position: relative;
+}
+
+.img-pf {
+  width: 20%;
+  border: 5px solid navy;
+}
+
+.welcome {
+}
+
+h6 {
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.jumbotron {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+
+.home-img{
+        display: inline-block;
+        margin: 5px 5px 5px 5px;
+        padding: 10px 10px 10px 10px;
+        border: solid 1px #BDBED9;
+        background-color:#F5F5F8;
+        box-shadow: 1px 1px 6px #888888;
+        -webkit-box-shadow: 1px 1px 6px #888888;
+        -moz-box-shadow: 1px 1px 6px #888888;
+        border-radius: 5px;
+        -moz-border-radius:10px;
+        -webkit-border-radius:10px;
+        margin-top: 10%;
+	position: relative;
+	left: 40%;
+	height: 20%;
+	width: 20%;
+}
+
+.home-img img {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        border-radius:6px;
+        -moz-border-radius:6px;
+        -webkit-border-radius:6px;
+}
+
+.btn-default {
+display: inline-block;
+position: absolute;
+  text-shadow: 0 1px 0 #fff;
+  background-image: -webkit-linear-gradient(top, #fff 0%, #e0e0e0 100%);
+  background-image:      -o-linear-gradient(top, #fff 0%, #e0e0e0 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e0e0e0));
+  background-image:         linear-gradient(to bottom, #fff 0%, #e0e0e0 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-color: #dbdbdb;
+  border-color: #ccc;
+}
+.btn-default:hover,
+.btn-default:focus {
+  background-color: #e0e0e0;
+  background-position: 0 -15px;
+
+
+}
+.btn-default:active,
+.btn-default.active {
+  background-color: #e0e0e0;
+  border-color: #dbdbdb;
+}
+.btn-default:disabled,
+.btn-default[disabled] {
+  background-color: #e0e0e0;
+  background-image: none;
+}
+
+
+.btn-group {
+	display: inline-block;
+	position: absolute;
+	margin-left: 70%;
+	float: right;
+	background: #FFFFFF;
+}
+
+/**
+ * Pure CSS3 Slideshow Without Page Jump by Taufik Nurrohman
+ * 26 April 2012
+ * http://hompimpaalaihumgambreng.blogspot.com
+ */
+ .slides {
+    padding: 0;
+    width: 609px;
+    /*height: 420px;*/
+    height: 600px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 600px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+  width: 100%;
+  bottom: 9px;
+  height: 11px;
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+
+.nav-dots .nav-dot {
+  top: -5px;
+  width: 11px;
+  height: 11px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6
+input#img-7:checked ~ .nav-dots label#img-dot-7
+input#img-8:checked ~ .nav-dots label#img-dot-8
+input#img-9:checked ~ .nav-dots label#img-dot-9
+input#img-10:checked ~ .nav-dots label#img-dot-10
+input#img-11:checked ~ .nav-dots label#img-dot-11
+{
+  background: rgba(0, 0, 0, 0.8);
+}
+
