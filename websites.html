@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Audrey Cole | Software Developer/Artist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="jQuery Responsive Carousel - Owl Carusel">
+    <meta name="author" content="Bartosz Wojciechowski">
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href="../assets/css/bootstrapTheme.css" rel="stylesheet">
+    <link href="../assets/css/custom.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <div class="container">
+    <div class="home">
+
+        <div class="row">
+          <div class="col-md-10">
+            <!-- Button trigger modal -->
+            <button class="btn btn-default btn-lg active" data-toggle="modal" data-target="#signUpModal" value="Contact">
+              Contact Me 
+            </button> 
+          </div>
+        </div>
+        <div class="btn-group">
+          <a href="index.html" class="btn btn-default" role="button"> Home </a>
+          <a href="aboutMe.html" class="btn btn-default" role="button">  About Me </a>
+          <a href="artwork.html" class="btn btn-default" role="button">Artwork </a> 
+        </div>
+    </div>
+    <!--home-->
+        
+
+
+<h2 id= "page-header">My Code/Website Samples</h2>
+<hr>
+<h3>Check me out on... <h3>
+    <a href="https://github.com/audreycole" style="color: white"> <h4>Github</h4> </a>
+    <a href="https://www.linkedin.com/profile/view?id=137841860&trk=nav_responsive_tab_profile" style="color: white"><h4>LinkedIn</h4></a>
+
+<ul class="slides">
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li class="slide-container">
+    <div class="slide">
+      <img src="img/cck.png" />
+        </div>
+    <div class="nav">
+      <label for="img-5" class="prev">&#x2039;</label>
+      <label for="img-2" class="next">&#x203a;</label>
+    </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="img/wakeme.png" />
+        </div>
+    <div class="nav">
+      <label for="img-1" class="prev">&#x2039;</label>
+      <label for="img-3" class="next">&#x203a;</label>
+    </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="img/app.png" />
+        </div>
+    <div class="nav">
+      <label for="img-2" class="prev">&#x2039;</label>
+      <label for="img-4" class="next">&#x203a;</label>
+    </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-4" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="img/post.png" />
+        </div>
+    <div class="nav">
+      <label for="img-3" class="prev">&#x2039;</label>
+      <label for="img-5" class="next">&#x203a;</label>
+    </div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-5" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="img/resume.png" />
+        </div>
+    <div class="nav">
+      <label for="img-4" class="prev">&#x2039;</label>
+      <label for="img-1" class="next">&#x203a;</label>
+    </div>
+    </li>
+
+    
+
+    <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+    </li>
+</ul>
+
+<h6>Please Enjoy</h6>
+
+</div>
+<!--container-->
+
+  <!-- Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Contact Me</h4>
+          </div>
+          <div class="modal-body">
+
+            <!--pop-up form-->
+            <form role="form" action="index.html" method="POST">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Phone</label>
+                <input type="text" class="form-control" placeholder="Text input" name="phone">
+              </div>
+              
+              <div class="form-group">
+                <label for="exampleInputPassword1">Message</label>
+                <textarea class="form-control" rows="3" name="message"></textarea>
+              </div>
+            
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="checkbox"> Check me out
+                </label>
+              </div>
+
+              <input type="submit" class="btn btn-default" name="submit" id= "submit"> 
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script>
+      document.getElementById('submit').onclick = function() {
+        confirm('Thank you for contacting me!');
+      };
+    </script> 
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

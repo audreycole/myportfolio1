@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Audrey Cole | Software Developer/Artis</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="artwork.html" style="color: white">Artwork</a></li>
+          <li><a href="websites.html" style="color: white">Websites</a></li>
+        </ul>
+        <h3 style="color: gray">About Me</h3>
+      </div>
+
+      <div class="jumbotron">
+        <div class="welcome-img">
+          <img src="img/pf.jpg" class="img-pf">
+          <h1 class="welcome">Welcome...</h1>
+        </div>
+        <p class="lead">Hi there! My name is Audrey and I am a double major in computer science and applied mathematics at Washington University in St. Louis. I'm currently seeking a summer job to gain general experience and experience in my chosen fields. I'm motivated, ambitious, and academically-driven. I also actively seeks new challenges and demonstrate follow-through on my commitments.
+        </p>
+        <p><a class="btn btn-lg btn-success" data-toggle="modal" data-target="#signUpModal" value="Contact">Contact Me</a></p>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-md-6">
+          <h3>Work Experience</h3>
+          <hr>
+          <h4>Champio: St. Louis, MO</h4>
+          <p><em>Predictive Algorithm, Back-End Development</em></p>
+          
+          <h4>Red Line Labs: Santa Clara, CA</h4>
+          <p><em>Web Developer, Intern</em></p>
+
+          <h4>Fitbit: San Francisco, CA </h4>
+          <p><em>Quality Assurance and Customer Support Intern </em> <p>
+
+        </div>
+
+        <div class="col-md-6">
+         <ul> <h3>Related Skills and Training</h3>
+          <hr>
+          <li><h5>2 Java Programming courses</h5></li>
+          <li><h5>2 C++ Programming courses</h5></li>
+          <li><h5> 3 years of Applied Mathematics courses</h5></li>
+          <li><h5>2 Algorithms courses</h5></li>
+          <li><h5>Experience in HTML/CSS, Python, PHP, Javascript, MySQL, Ruby, Linux </h5></li>
+          <p><em>--self-taught</em></p>
+        </ul>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>&copy; Audrey Cole 2014</p>
+      </div>
+
+    </div> <!-- /container -->
+
+     <!-- Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Contact Me</h4>
+          </div>
+          <div class="modal-body">
+
+            <!--pop-up form-->
+            <form role="form" action="index.html" method="POST">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Phone</label>
+                <input type="text" class="form-control" placeholder="Text input" name="phone">
+              </div>
+              
+              <div class="form-group">
+                <label for="exampleInputPassword1">Message</label>
+                <textarea class="form-control" rows="3" name="message"></textarea>
+              </div>
+            
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="checkbox"> Check me out
+                </label>
+              </div>
+
+              <input type="submit" class="btn btn-default" name="submit" id= "submit"> 
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <script>
+      document.getElementById('submit').onclick = function() {
+        confirm('Thank you for contacting me!');
+      };
+    </script> 
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+
+</html>
