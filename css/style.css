@@ -9,6 +9,12 @@ body {
 	margin-top: 5%;
 }
 
+.homepage-img {
+  position: relative;
+  left: 40%;
+  width: 20%;
+  border: 5px solid navy;
+}
 .welcome-img {
   position: relative;
 }
@@ -16,9 +22,6 @@ body {
 .img-pf {
   width: 20%;
   border: 5px solid navy;
-}
-
-.welcome {
 }
 
 h6 {
@@ -35,32 +38,6 @@ h2 {
   margin-bottom: 0px;
 }
 
-.polaroid {
-  position: relative;
-  margin-top: 10%;
-  left: 40%;
-  height: 25%;
-  width:25%;
-}
- 
-.polaroid img {
-  height:90%;
-  width:95%;
-  border: 10px solid #fff;
-  border-bottom: 45px solid #fff;
-  -webkit-box-shadow: 3px 3px 3px #777;
-     -moz-box-shadow: 3px 3px 3px #777;
-          box-shadow: 3px 3px 3px #777;
-}
- 
-.polaroid p {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  bottom: 0px;
-  font: 400 18px/1 'Kaushan Script', cursive;
-  color: #888;
-}
 
 .home-img img {
         margin: 0px 0px 0px 0px;
@@ -108,7 +85,6 @@ position: absolute;
 	position: absolute;
 	margin-left: 70%;
 	float: right;
-	background: #FFFFFF;
 }
 
 /**
